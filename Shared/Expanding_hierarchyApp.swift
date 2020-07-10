@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Expanding_hierarchyApp: App {
+struct ExpandingHierarchyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
