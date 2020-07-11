@@ -8,31 +8,42 @@
 import SwiftUI
 
 struct RecordRow: View {
+    
     let record: Record
     
     @ViewBuilder
     var body: some View {
+        
         switch record.type {
+        
         case .file:
             NavigationLink(
-                destination:
-                    Text(record.name)
-                    .font(.title)
-                    .foregroundColor(.secondary)
-                    .frame(minWidth: 200, idealWidth: 400, maxWidth: .infinity, minHeight: 200, idealHeight: 400, maxHeight: .infinity, alignment: .center)
-                ,
+                destination: text,
                 label: {
                     Label(record.name, systemImage: "swift")
                         .accentColor(.red)
-                })
+                }
+            )
+            
         case .folder:
             Label(record.name, systemImage: "folder.fill")
                 .accentColor(.yellow)
+            
         case .package:
             Label(record.name, systemImage: "shippingbox.fill")
                 .accentColor(.gray)
+            
         }
+        
     }
+    
+    var text: some View {
+        Text(record.name)
+            .font(.title)
+            .foregroundColor(.secondary)
+            .frame(minWidth: 200, idealWidth: 300, maxWidth: .infinity, minHeight: 600, idealHeight: 800, maxHeight: .infinity, alignment: .center)
+    }
+    
 }
 
 struct RecordRow_Previews: PreviewProvider {

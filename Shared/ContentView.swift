@@ -8,33 +8,49 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var selection: Set<Int> = [0]
+    
     var body: some View {
         NavigationView {
-            List{
+            
+            List(selection: self.$selection) {
+                
                 NavigationLink(
                     destination: HierarchyList(),
                     label: {
                         Label("Hierarchy List", systemImage: "list.bullet.indent")
-                    })
+                    }
+                )
+                .tag(0)
+                
                 NavigationLink(
                     destination: OutlineView(),
                     label: {
                         Label("Outline Group", systemImage: "list.triangle")
-                    })
+                    }
+                )
+                .tag(1)
+                
                 NavigationLink(
                     destination: DisclosureView(),
                     label: {
                         Label("Disclosure Group", systemImage: "menubar.arrow.down.rectangle")
-                    })
+                    }
+                )
+                .tag(2)
+                
             }
             .listStyle(SidebarListStyle())
             .navigationTitle("Expanding hierarchy")
-            .frame(minWidth: 100, idealWidth: 200, maxWidth: .infinity, minHeight: 300, idealHeight: 400, maxHeight: .infinity, alignment: .center)
+            
             HierarchyList()
+            
             Text("Select an file")
                 .font(.title)
                 .foregroundColor(.secondary)
-                .frame(minWidth: 400, idealWidth: 800, maxWidth: .infinity, minHeight: 400, idealHeight: 800, maxHeight: .infinity, alignment: .center)
+                .frame(minWidth: 200, idealWidth: 300, maxWidth: .infinity, minHeight: 600, idealHeight: 800, maxHeight: .infinity, alignment: .center)
+            
         }
     }
 }
