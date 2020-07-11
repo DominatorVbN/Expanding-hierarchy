@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DisclosureView: View {
     
-    @State var color: Color = .red
+    @EnvironmentObject var theme: AppTheme
     @State var isExpanded = true
     @State var array: [Int] = Array(0..<5)
 
@@ -19,7 +19,7 @@ struct DisclosureView: View {
                 
                 GroupBox{
                     Toggle("Is expanded", isOn: $isExpanded)
-                        .toggleStyle(SwitchToggleStyle(tint: color))
+                        .toggleStyle(SwitchToggleStyle(tint: theme.accentColor))
                 }
                 
                 GroupBox{
@@ -44,7 +44,7 @@ struct DisclosureView: View {
                 GroupBox{
                     DisclosureGroup("Color picker") {
                         GroupBox {
-                            ColorPicker("Select color", selection: $color)
+                            ColorPicker("Select color", selection: $theme.accentColor)
                                 .font(.body)
                         }
                         .padding(.vertical)
@@ -55,7 +55,7 @@ struct DisclosureView: View {
                     DisclosureGroup("Nested Group") {
                         DisclosureGroup("Inner Group") {
                             RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(color)
+                                .foregroundColor(theme.accentColor)
                                 .frame(height: 50)
                         }
                     }
@@ -65,11 +65,10 @@ struct DisclosureView: View {
                 
             }
             .padding()
-            .accentColor(color)
             .animation(.default)
         }
         .navigationTitle("Disclosure Groups")
-        .frame(minWidth: 200, idealWidth: 300, maxWidth: .infinity, minHeight: 300, idealHeight: 400, maxHeight: .infinity, alignment: .center)
+        .frame(minWidth: 400, idealWidth: 400, maxWidth: .infinity, minHeight: 500, idealHeight: 600, maxHeight: .infinity, alignment: .center)
     }
     
 }

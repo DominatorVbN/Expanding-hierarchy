@@ -20,8 +20,12 @@ struct RecordRow: View {
             NavigationLink(
                 destination: text,
                 label: {
-                    Label(record.name, systemImage: "swift")
-                        .accentColor(.red)
+                    Label {
+                        Text(record.name)
+                    } icon: {
+                        Image(systemName: "swift")
+                            .foregroundColor(.red)
+                    }
                 }
             )
             
