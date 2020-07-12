@@ -7,28 +7,39 @@
 ## iOS
 <p align="center">
 <a href = "Shared/OutlineView.swift">
-<img src="Screenshots/OutlineGroupiOS.png" width=282 href= "Shared/OutlineView.swift">
-<a>
-<img src="Screenshots/ExpandingListiOS.png" width= 282>
-<img src="Screenshots/DisclosureGroupiOS.png" width= 282>
+<img src="Screenshots/OutlineGroupiOS.png" width=280>
+</a>
+<img src="Screenshots/ExpandingListiOS.png" width= 280>
+<img src="Screenshots/DisclosureGroupiOS.png" width= 280>
 </p>
 
 ## iPadOS
+<p align="center">
 <a href = "Shared/OutlineView.swift">
-![](Screenshots/OutlineGroupiPad.png)
-<a>
-![](Screenshots/ExpandingListiPad.png)
-![](Screenshots/DisclosureGroupiPad.png)
+  <img src="Screenshots/OutlineGroupiPad.png">
+</a>
+<a href = "Shared/HierarchyList.swift">
+  <img src="Screenshots/ExpandingListiPad.png">
+</a>
+<a href = "Shared/DisclosureView.swift">
+  <img src="Screenshots/DisclosureGroupiPad.png">
+</a>
+</p>
 
 
 ## macOS
+<p align="center">
 <a href = "Shared/OutlineView.swift">
-![](Screenshots/OutlineGroupMac.png)
-<a>
+  <img src="Screenshots/OutlineGroupMac.png">
+</a>
 <a href = "Shared/HierarchyList.swift">
-![](Screenshots/ExpandingListMac.png)
-<a>
-![](Screenshots/DisclosureGroupMac.png)
+  <img src="Screenshots/ExpandingListMac.png">
+</a>
+<a href = "Shared/DisclosureView.swift">
+  <img src="Screenshots/DisclosureGroupMac.png">
+</a>
+</p>
+
 
 
 
