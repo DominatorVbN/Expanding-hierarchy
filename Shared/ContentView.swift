@@ -46,10 +46,10 @@ struct ContentView: View {
             
             HierarchyList()
             
-            Text("Select an file")
+            Text("Select a file")
                 .font(.title)
                 .foregroundColor(.secondary)
-                .frame(minWidth: 200, idealWidth: 300, maxWidth: .infinity, minHeight: 600, idealHeight: 800, maxHeight: .infinity, alignment: .center)
+                .frame(minWidth: 200, idealWidth: 300, maxWidth: .infinity, minHeight: 500, idealHeight: 800, maxHeight: .infinity, alignment: .center)
             
         }
     }
