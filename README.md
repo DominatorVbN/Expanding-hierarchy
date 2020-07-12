@@ -7,10 +7,10 @@
 ## iOS
 <p align="center">
 <a href = "Shared/OutlineView.swift">
-<img src="Screenshots/OutlineGroupiOS.png" width=280>
+<img src="Screenshots/OutlineGroupiOS.png" width=270>
 </a>
-<img src="Screenshots/ExpandingListiOS.png" width= 280>
-<img src="Screenshots/DisclosureGroupiOS.png" width= 280>
+<img src="Screenshots/ExpandingListiOS.png" width= 270>
+<img src="Screenshots/DisclosureGroupiOS.png" width= 270>
 </p>
 
 ## iPadOS
