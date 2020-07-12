@@ -9,8 +9,12 @@
 <a href = "Shared/OutlineView.swift">
 <img src="Screenshots/OutlineGroupiOS.png" width=270>
 </a>
+<a href = "Shared/HierarchyList.swift">
 <img src="Screenshots/ExpandingListiOS.png" width= 270>
+</a>
+<a href = "Shared/DisclosureView.swift">
 <img src="Screenshots/DisclosureGroupiOS.png" width= 270>
+</a>
 </p>
 
 ## iPadOS
