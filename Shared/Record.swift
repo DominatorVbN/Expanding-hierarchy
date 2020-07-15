@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Record: Identifiable {
+struct Record: Identifiable, Hashable {
     enum RecordType{
         case folder
         case file

@@ -39,6 +39,16 @@ struct ContentView: View {
                     }
                 )
                 .tag(2)
+                                
+                NavigationLink(
+                    destination: OutlineVCWrapper()
+                        .navigationTitle("Outline View UIKit")
+                    ,
+                    label: {
+                        Label("UIKit OutlineView", systemImage: "list.triangle")
+                    }
+                )
+                .tag(2)
                 
             }
             .listStyle(SidebarListStyle())
